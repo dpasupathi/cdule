@@ -4,7 +4,7 @@ import (
 	"gorm.io/gorm"
 	"time"
 
-	"github.com/mmanda-extr/cdule/pkg"
+	"github.com/dpasupathi/cdule/pkg"
 )
 
 type cduleRepository struct {

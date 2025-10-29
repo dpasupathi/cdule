@@ -1,7 +1,7 @@
 package model
 
 import (
-	"github.com/mmanda-extr/cdule/pkg"
+	"github.com/dpasupathi/cdule/pkg"
 
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/viper"

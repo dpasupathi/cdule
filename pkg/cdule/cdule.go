@@ -4,7 +4,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/mmanda-extr/cdule/pkg/model"
+	"github.com/dpasupathi/cdule/pkg/model"
 
 	log "github.com/sirupsen/logrus"
 	"gorm.io/gorm"

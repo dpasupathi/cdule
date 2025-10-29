@@ -4,8 +4,8 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/mmanda-extr/cdule/pkg/cdule"
-	"github.com/mmanda-extr/cdule/pkg/utils"
+	"github.com/dpasupathi/cdule/pkg/cdule"
+	"github.com/dpasupathi/cdule/pkg/utils"
 
 	log "github.com/sirupsen/logrus"
 )
