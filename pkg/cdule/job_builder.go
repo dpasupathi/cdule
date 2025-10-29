@@ -46,7 +46,10 @@ func (j *AbstractJob) Build(cronExpression string) (*model.Job, error) {
 	registerType(j.Job)
 	newJobModel, err := model.CduleRepos.CduleRepository.GetJobByName(j.Job.JobName())
 	if nil != newJobModel || nil != err {
-		return nil, fmt.Errorf("job with Name: %s already exists", newJobModel.JobName)
+		if nil != newJobModel {
+			return nil, fmt.Errorf("job with Name: %s already exists", newJobModel.JobName)
+		}
+		return nil, fmt.Errorf("retrieval of job %s failed with err %s", j.Job.JobName(), err.Error())
 	}
 	jobDataBytes, err := json.Marshal(j.JobData)
 	/*if nil != err {
